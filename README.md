@@ -7,7 +7,7 @@
 
 ## Install
 ```
-yarn add global create-nice-app 
+yarn global add create-nice-app 
 ```
 THEN (You may have to open a new shell for the command to appear after a yarn global install):
 ```

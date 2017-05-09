@@ -54,12 +54,12 @@ rl.question(_chalk.yellow.bold(`\n 🐕  do you want to create your nice app wit
             if (userInput.includes('y')) {
               var shellCmds = child_process.spawn(
                 `clear && mkdir ${projectName} && cd ${projectName} && ` +
-                'cp -r ~/.config/yarn/global/node_modules/create-nice-app/. . && ' +
+                `cp -r ${path.join(__dirname, '../.') + '/.'} . && ` +
                 'rm -r bin/ README.md package.json node_modules/ yarn.lock && ' +
                 `echo '${newPackageJson}' > package.json && ` +
                 `printf '# ${projectName}\n\n![party-parrot](https://media.giphy.com/media/l3q2zVr6cu95nF6O4/giphy.gif)' > README.md && ` +
-                'mv .npmignore .gitignore && ' +
-                `yarn`, {shell: true});
+                `yarn &&` +
+                'mv .npmignore .gitignore 2>/dev/null', {shell: true});
 
               // event listeners on spawn
               shellCmds.stdout.on('data', function(data) {
@@ -74,7 +74,7 @@ rl.question(_chalk.yellow.bold(`\n 🐕  do you want to create your nice app wit
 
               shellCmds.on('close', function(exitCode) {
                 console.log(`\n 🕺   💎   💎   💎   💎   💎   💎   💎   💎   💎   💎   💎   💎   💎   💎   🕺 \n\n`);
-                console.log(_chalk.green(`Your nice new app is ready to go! 🕺  Run '${_chalk.yellow.bold(`cd ${projectName} && yarn dev`)}' to get started!  🐕`));
+                console.log(_chalk.green(`Your nice new app is ready to go! 🕺  Run '${_chalk.yellow.bold(`cd ${projectName} && yarn dev`)}' to get started!  🐕\n`));
                 process.exit(exitCode);
               });
 

@@ -1,6 +1,6 @@
 {
   "name": "create-nice-app",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "React/Express boilerplate generator",
   "main": "server/runServer.js",
   "repository": "https://github.com/brantstuns/create-nice-app",
