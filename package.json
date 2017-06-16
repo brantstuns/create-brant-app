@@ -18,6 +18,7 @@
     "test:coverage": "yarn test:client -- --coverage && yarn test:server -- --coverage",
     "test:client": "jest -c client/jest.client.config.json",
     "test:server": "jest -c server/jest.server.config.json",
+    "testw": "yarn test:client -- --watch",
     "presendCoverage": "lcov-result-merger './coverage/**/lcov.info' ./coverage/lcov.info",
     "sendCoverage": "echo '🕺  you need to set up code coverage integration with your tool of choice!  🕺'",
     "webpack": "NODE_ENV='production' webpack --config webpack.prod.config.js",
