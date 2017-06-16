@@ -20,17 +20,13 @@
 </p>
 
 ---
-## Install
+## Install (make sure you have the latest yarn version)
 ```
-yarn global add create-nice-app 
-```
-THEN (You may have to open a new shell for the command to appear after a yarn global install):
-```
-$ create-nice-app 
+yarn create nice-app 
 ```
 ---
 
-#### Create-nice-app spins up a very basic app setup, designed to just work and let you hit the ground running. I'm only imposing a few (😉) of my opinions on you! However, it's really easy to swap pieces out so this serves as a nice minimal, modern  fullstack Javascript boilerplate generator.
+#### Create-nice-app spins up a very simple little webapp, great for throwing together quick working ideas or starting new projects from scratch. It is designed to work well out of the box and take care of all tedious boilerplate. It's really easy to swap pieces out so this serves as a really nice modern fullstack Javascript boilerplate generator.
 
 ### What you're getting:
 Frontend: 
@@ -65,8 +61,5 @@ Build:
 | webpack:watch | runs the development webpack bundle which has watch enabled |
 | server | runs the server for production via the node command with NODE_ENV set to 'prodution' |
 | server:watch | runs the server for development with nodemon and NODE_ENV set to 'development' |
-| styles | compiles the scss files to a single styles.css |
-| styles:watch | same as styles but with the --watch flag passed to node-sass |
-| build | builds the apps assets for production using webpack and node-sass |
 | prod | runs the build command and starts the production server |
 | dev | runs all the watchers in parrelel for local development |
