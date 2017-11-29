@@ -1,5 +1,8 @@
 node_modules
 coverage
 public
-webpack.production.config.js
+webpack.prod.config.js
+webpack.dev.config.js
 bin/
+client/tests
+server/

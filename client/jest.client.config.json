@@ -7,5 +7,6 @@
     "/node_modules/",
     "/client/js/index.js"
   ],
+  "setupFiles": ["./tests/enzyme.config.js", "./tests/rafPolyfill.js"],
   "setupTestFrameworkScriptFile": "../node_modules/jest-enzyme/lib/index.js"
 }
