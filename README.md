@@ -17,6 +17,9 @@
   <a href="https://david-dm.org/brantstuns/create-nice-app?type=dev">
     <img src="https://david-dm.org/brantstuns/create-nice-app/dev-status.svg"/>
   </a>
+  <a href="https://github.com/prettier/prettier">
+    <img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square"/>
+  </a>
 </p>
 
 ---
@@ -26,11 +29,11 @@ yarn create nice-app
 ```
 ---
 
-#### Create-nice-app spins up a very simple little webapp, great for throwing together quick working ideas or starting new projects from scratch. It is designed to work well out of the box and take care of all tedious boilerplate. It's really easy to swap pieces out so this serves as a really nice modern fullstack Javascript boilerplate generator.
+#### Create-nice-app spins up a very simple little app, great for throwing together quick working ideas or starting new projects from scratch. It is designed to work well out of the box and take care of all tedious boilerplate. It's really easy to swap pieces out so this serves as a really nice, modern, fullstack Javascript boilerplate generator.
 
 ### What you're getting:
 Frontend: 
-- React 15.5+
+- React 16
 - SCSS
 - React Router 4
 
@@ -39,18 +42,20 @@ Backend:
 
 Testing:
 - Jest 20
-- Enzyme
+- Enzyme 3
 
 Build:
 - Yarn
-- Webpack 2
+- Webpack 3
 - Babel
-- Eslint w/ a modified Airbnb's eslint config
+- Eslint
+- Prettier for formatting
 ---
 ### Yarn Scripts available: 
 | name | what it does | 
 | --- | --- |
-| lint | runs eslint using a slightly modified airbnb eslint config |
+| lint | runs eslint |
+| lintf | runs eslint with the `--fix` flag |
 | test | runs both the client and server tests via jest |
 | test:coverage | same as above but passing the --coverage flag to jest |
 | test:client | run the client or frontend tests |
@@ -59,7 +64,7 @@ Build:
 | sendCoverage | I don't know how you do code coverage, but however you do it do it here |
 | webpack | runs the production webpack bundle |
 | webpack:watch | runs the development webpack bundle which has watch enabled |
-| server | runs the server for production via the node command with NODE_ENV set to 'prodution' |
+| server | runs the server for production via the node command with NODE_ENV set to 'production' |
 | server:watch | runs the server for development with nodemon and NODE_ENV set to 'development' |
 | prod | runs the build command and starts the production server |
-| dev | runs all the watchers in parrelel for local development |
+| dev | runs all the watchers in parallel for local development |
