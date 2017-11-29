@@ -7,7 +7,7 @@ export default function Router() {
   return (
     <BrowserRouter>
       <App>
-        <Route exact path="/" component={Party}/>
+        <Route exact path="/" component={Party} />
       </App>
     </BrowserRouter>
   );

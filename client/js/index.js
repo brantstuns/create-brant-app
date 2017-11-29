@@ -4,4 +4,4 @@ import Router from './Router';
 import '../styles/styles.scss';
 import 'raf/polyfill';
 
-ReactDOM.render(<Router/>, document.getElementById('appRender'));
+ReactDOM.render(<Router />, document.getElementById('appRender'));
