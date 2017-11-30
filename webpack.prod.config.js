@@ -18,23 +18,18 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         loader: 'babel-loader',
-        include: [path.join(__dirname, 'client/js/')],
         exclude: /node_modules/,
-        options: { cacheDirectory: true }
+        options: { cacheDirectory: false }
       },
       {
-        test: /\.scss$/,
-        use: extractSass.extract({
-          use: [{
-            loader: 'css-loader'
-          }, {
-            loader: 'sass-loader'
-          }],
-          // use style-loader in development
-          fallback: 'style-loader'
-        })
+        test: /\.s?css$/,
+        loaders: ['style-loader', 'css-loader?sourceMap?root=.', 'sass-loader?outputStyle=compressed&sourceMap']
+      },
+      {
+        test: /\.(svg|png|jpe?g)$/,
+        loader: 'url-loader'
       }
     ]
   },

@@ -2,12 +2,15 @@ const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
-  entry: ['./client/js/index.js'],
+  entry: ['whatwg-fetch', './client/js/index.js'],
   devtool: 'inline-source-map',
   output: {
     path: path.join(__dirname, 'public'),
     filename: 'bundle.js',
     publicPath: '/'
+  },
+  resolve: {
+    modules: ['client/js', 'node_modules']
   },
   module: {
     rules: [
@@ -19,9 +22,13 @@ module.exports = {
         options: { cacheDirectory: true }
       },
       {
-        test: /\.scss$/,
-        loaders: ['style-loader', 'css-loader', 'sass-loader']
+        test: /\.s?css$/,
+        loaders: ['style-loader', 'css-loader?sourceMap?root=.', 'sass-loader']
       },
+      {
+        test: /\.(svg|png|jpe?g)$/,
+        loader: 'url-loader'
+      }
     ]
   },
   plugins: [
