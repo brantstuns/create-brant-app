@@ -25,15 +25,15 @@
 ---
 ## Install (make sure you have the latest yarn version)
 ```
-yarn create nice-app 
+yarn create nice-app
 ```
 ---
 
 #### Create-nice-app spins up a very simple little app, great for throwing together quick working ideas or starting new projects from scratch. It is designed to work well out of the box and take care of all tedious boilerplate. It's really easy to swap pieces out so this serves as a really nice, modern, fullstack Javascript boilerplate generator.
 
 ### What you're getting:
-Frontend: 
-- React 16
+Frontend:
+- React 16.3
 - SCSS
 - React Router 4
 
@@ -41,18 +41,18 @@ Backend:
 - Express
 
 Testing:
-- Jest 20
+- Jest 22
 - Enzyme 3
 
 Build:
 - Yarn
-- Webpack 3
+- Webpack 4
 - Babel
 - Eslint
 - Prettier for formatting
 ---
-### Yarn Scripts available: 
-| name | what it does | 
+### Yarn Scripts available:
+| name | what it does |
 | --- | --- |
 | lint | runs eslint |
 | lintf | runs eslint with the `--fix` flag |

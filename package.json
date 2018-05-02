@@ -1,13 +1,13 @@
 {
   "name": "create-nice-app",
-  "version": "1.1.2",
+  "version": "2.0.0",
   "description": "React/Express boilerplate generator",
   "main": "server/runServer.js",
   "repository": "https://github.com/brantstuns/create-nice-app",
   "author": "Brant Stuns",
   "license": "MIT",
   "engines": {
-    "node": ">=6.10.3"
+    "node": ">=10"
   },
   "bin": {
     "create-nice-app": "bin/nice.js"
@@ -23,7 +23,7 @@
     "test:client": "jest -c client/jest.client.config.json",
     "test:server": "jest -c server/jest.server.config.json",
     "testw": "yarn test:client -- --watch",
-    "presendCoverage": "lcov-result-merger './coverage/**/lcov.info' ./coverage/lcov.info",
+    "presendCoverage": "echo setup script for sending code coverage since I always end up needing one",
     "sendCoverage": "echo '🕺  you need to set up code coverage integration with your tool of choice!  🕺'",
     "webpack": "NODE_ENV='production' webpack --config webpack.prod.config.js",
     "webpack:watch": "webpack --config webpack.dev.config.js",
@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
-    "babel-jest": "^21.2.0",
+    "babel-jest": "^22.4.3",
     "babel-loader": "^7.1.2",
     "babel-plugin-react-transform": "^3.0.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
@@ -47,36 +47,36 @@
     "enzyme-adapter-react-16": "^1.0.4",
     "eslint": "^4.12.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-react": "^7.0.1",
-    "jest": "^21.2.1",
-    "jest-cli": "^21.2.1",
-    "jest-enzyme": "^4.0.1",
-    "lcov-result-merger": "^1.2.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "jest": "^22.4.3",
+    "jest-cli": "^22.4.3",
+    "jest-enzyme": "^6.0.0",
     "node-sass": "^4.5.2",
     "nodemon": "^1.11.0",
     "npm-run-all": "^4.0.2",
     "prettier": "^1.8.2",
     "prettier-eslint": "^8.2.2",
     "react-test-renderer": "^16.0.0",
-    "sass-loader": "^6.0.5",
-    "style-loader": "^0.19.0",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
     "supertest": "^3.0.0",
-    "webpack-bundle-analyzer": "^2.8.1"
+    "webpack-bundle-analyzer": "^2.8.1",
+    "webpack-cli": "^2.1.2"
   },
   "dependencies": {
     "chalk": "^2.3.0",
-    "compression": "^1.6.2",
-    "express": "^4.16.2",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "prop-types": "^15.5.8",
+    "compression": "^1.7.2",
+    "express": "^4.16.3",
+    "prop-types": "^15.6.1",
     "raf": "^3.4.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
-    "redux": "^3.7.2",
-    "webpack": "^3.8.1"
+    "redux": "^4.0.0",
+    "webpack": "^4.6.0"
   }
 }

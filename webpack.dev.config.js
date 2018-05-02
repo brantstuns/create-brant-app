@@ -36,5 +36,6 @@ module.exports = {
       NODE_ENV: 'development'
     })
   ],
-  watch: true
+  watch: true,
+  mode: 'development'
 };
