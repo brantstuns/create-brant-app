@@ -1,6 +1,6 @@
-![doggo](https://media.giphy.com/media/1M4w25h7a3PEs/giphy.gif)
 <p align="center">
   <img src="https://media.giphy.com/media/3og0IwJPfGwyMt9uHm/giphy.gif"/>
+  <img src="https://media.giphy.com/media/1M4w25h7a3PEs/giphy.gif"/>
   <br>
   <a href="https://travis-ci.org/brantstuns/create-nice-app">
     <img src="https://travis-ci.org/brantstuns/create-nice-app.svg?branch=master"/>
